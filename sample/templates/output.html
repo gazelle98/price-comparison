@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product and Item Data</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .product, .item {
+    margin-bottom: 20px;
+  }
+  .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .price {
+    color: green;
+    margin-bottom: 5px;
+  }
+  .link {
+    color: blue;
+    text-decoration: none;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product">
+    <h2>The items are sorted by their prices:</h2>
+    <div class="title">{{ data_1.title }}</div>
+    <div class="price">${{ data_1.price }}</div>
+    <a href="{{ data_1.link }}" class="link">More details</a>
+    </div>
+    <div class='product'>
+    <div class="title">{{ data_2.title }}</div>
+    <div class="price">${{ data_2.price }}</div>
+    <a href="{{ data_2.link }}" class="link">More details</a>
+    </div>
+</div>
+
+</body>
+</html>
